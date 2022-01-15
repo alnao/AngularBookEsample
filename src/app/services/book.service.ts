@@ -18,11 +18,11 @@ export class BookService {
   delete(id : number): Observable<Book>{
     return this.http.delete<Book>(`${this.urlApi}?id=${id}`)
   }
-  insert(form : NgForm): Observable<Book>{
-    return this.http.post<Book>(this.urlApi,form.value)//con post si fa così
+  insert(form : any): Observable<Book>{
+    return this.http.post<Book>(this.urlApi,form.value)//
   }
-  update(form : NgForm,id : number): Observable<Book>{
-    return this.http.put<Book>(`${this.urlApi}?id=${id}`,form.value)//con post si fa così
+  update(form : any,id : number): Observable<Book>{
+    return this.http.put<Book>(`${this.urlApi}?id=${id}`,form.value)//
   }
   getId(id : string): Observable<Book>{
     return this.http.get<Book>(`${this.urlApi}?id=${id}`);

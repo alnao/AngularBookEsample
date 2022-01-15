@@ -7,7 +7,7 @@ import { BookComponent } from './componets/book/book.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http'
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormComponent } from './shared/form/form.component';
 import { BookDetailComponent } from './componets/book-detail/book-detail.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
@@ -28,7 +28,7 @@ import { AnButtonComponent } from './shared/an-button/an-button.component';
     BrowserModule,
     AppRoutingModule
     ,NgbModule,HttpClientModule,
-    FormsModule,BrowserAnimationsModule
+    FormsModule,BrowserAnimationsModule, ReactiveFormsModule
 ,Ng2SearchPipeModule
   ],
   providers: [],
